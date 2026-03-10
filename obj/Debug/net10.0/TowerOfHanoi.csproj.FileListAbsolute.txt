@@ -1,0 +1,14 @@
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\bin\Debug\net10.0\TowerOfHanoi.exe
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\bin\Debug\net10.0\TowerOfHanoi.deps.json
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\bin\Debug\net10.0\TowerOfHanoi.runtimeconfig.json
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\bin\Debug\net10.0\TowerOfHanoi.dll
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\bin\Debug\net10.0\TowerOfHanoi.pdb
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\TowerOfHanoi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\TowerOfHanoi.AssemblyInfoInputs.cache
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\TowerOfHanoi.AssemblyInfo.cs
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\TowerOfHanoi.csproj.CoreCompileInputs.cache
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\TowerOfHanoi.dll
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\refint\TowerOfHanoi.dll
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\TowerOfHanoi.pdb
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\TowerOfHanoi.genruntimeconfig.cache
+C:\Users\Sasa\OneDrive - Fachhochschule St. Pölten\Desktop\Faks\4.Semestar\C#\TowerOfHanoi\obj\Debug\net10.0\ref\TowerOfHanoi.dll
