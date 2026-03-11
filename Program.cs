@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -21,7 +21,7 @@ namespace HanoiTower
 
             if (args[0] == "-Recursive")
             {
-                RecursiveSolution();
+                RecursiveSolution(diskNum, leftTower, rightTower, middleTower);
             }
 
             if (args[0] == "-Iterative")
@@ -30,17 +30,37 @@ namespace HanoiTower
             }
         }
 
+        static void RecursiveSolution(int diskNum, Stack<int> leftTower, Stack<int> rightTower, Stack<int> middleTower)
+        {
+            PrintTowers(leftTower, middleTower, rightTower, diskNum);
+            Thread.Sleep(500);
+            RecursiveHanoi(diskNum, leftTower, middleTower, rightTower, "Left tower", "Middle tower", "Right tower", leftTower, middleTower, rightTower, diskNum);
+        }
+        static void RecursiveHanoi(int n,  Stack<int> source,Stack<int> helper, Stack<int> destination,string sourceName,string helperName, string destinationName, Stack<int> leftTower, Stack<int> middleTower, Stack<int> rightTower,int diskNum)
+        {
+            if (n == 1)
+            {
+            MoveDisk(source, destination, sourceName, destinationName, leftTower, middleTower, rightTower, diskNum);
+            return;
+            }
+
+            RecursiveHanoi(n - 1, source, destination, helper, sourceName, destinationName, helperName,
+                           leftTower, middleTower, rightTower, diskNum);
+            MoveDisk(source, destination, sourceName, destinationName, leftTower, middleTower, rightTower, diskNum);
+            RecursiveHanoi(n - 1, helper, source, destination, helperName, sourceName, destinationName,
+                           leftTower, middleTower, rightTower, diskNum);
+        }
         static void IterativeSolution(int diskNum,Stack<int> leftTower, Stack<int> rightTower, Stack<int> middleTower)
         {
-            string left = "L";
-            string middle = "M";
-            string right = "R";
+            string left = "Left tower";
+            string middle = "Middle tower";
+            string right = "Right tower";
 
             int totalMoves = (int)(Math.Pow(2, diskNum) - 1);
 
-            if (diskNum == 0 || diskNum > 10 || diskNum < 0)
+            if (diskNum == 1 || diskNum <= 0)
             {
-                Console.WriteLine("Invalid number of disks. Please enter a number between 1 and 10.");
+                Console.WriteLine("Invalid number of disks. Please enter a number bigger than 1.");
                 return;
             }
 
@@ -55,32 +75,29 @@ namespace HanoiTower
                 middleTower = tempStack;
             }
 
-            PrintTowers(leftTower, middleTower, rightTower, diskNum);
-            Thread.Sleep(500);
-
             for (int i = 1; i <= totalMoves; i++)
             {
                 Console.WriteLine($"This is move number {i} of {totalMoves}");
 
                 if (i % 3 == 1)
                 {
-                    MoveDisk(leftTower, rightTower, left, right);
+                    MoveDisk(leftTower, rightTower, left, right , leftTower, middleTower, rightTower, diskNum);
                 }
                 else if (i % 3 == 2)
                 {
-                    MoveDisk(leftTower, middleTower, left, middle);
+                    MoveDisk(leftTower, middleTower, left, middle, leftTower, middleTower, rightTower, diskNum);
                 }
                 else if (i % 3 == 0)
                 {
-                    MoveDisk(middleTower, rightTower, middle, right);
+                    MoveDisk(middleTower, rightTower, middle, right, leftTower, middleTower, rightTower, diskNum);
                 }
-
-                PrintTowers(leftTower, middleTower, rightTower, diskNum);
-                Thread.Sleep(500);
             }
         }
 
-        static void MoveDisk(Stack<int> source, Stack<int> destination, string sourceName, string destinationName)
+        static void MoveDisk(Stack<int> source, Stack<int> destination,
+                             string sourceName, string destinationName,
+                             Stack<int> leftTower, Stack<int> middleTower, Stack<int> rightTower,
+                             int diskNum)
         {
             int s;
             if (source.Count == 0)
@@ -112,7 +129,8 @@ namespace HanoiTower
                 source.Push(destination.Pop());
                 Console.WriteLine($"Move disk from {destinationName} to {sourceName}");
             }
-                
+            PrintTowers(leftTower, middleTower, rightTower, diskNum);
+            Thread.Sleep(500); 
         }
 
         static string DrawDisk(int disk, int maxDisk)
@@ -150,10 +168,6 @@ namespace HanoiTower
             Console.WriteLine(new string('-', diskNum * 6));
             Console.WriteLine("   L" + new string(' ', diskNum * 2) + "M" + new string(' ', diskNum * 2) + "R");
             Console.WriteLine();
-        }
-
-        static void RecursiveSolution()
-        {
         }
     }
 }
