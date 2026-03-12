@@ -58,9 +58,9 @@ namespace HanoiTower
 
             int totalMoves = (int)(Math.Pow(2, diskNum) - 1);
 
-            if (diskNum == 1 || diskNum <= 0)
+            if (diskNum <= 0)
             {
-                Console.WriteLine("Invalid number of disks. Please enter a number bigger than 1.");
+                Console.WriteLine("Invalid number of disks. Please enter a number bigger than 0.");
                 return;
             }
 
