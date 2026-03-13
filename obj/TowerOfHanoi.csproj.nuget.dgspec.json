@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sasa\\OneDrive - Fachhochschule St. Pölten\\Desktop\\Faks\\4.Semestar\\C#\\TowerOfHanoi\\TowerOfHanoi.csproj": {}
+    "C:\\Users\\User\\Desktop\\faks\\C# Development\\Hanoi Tower\\TowerOfHanoi\\TowerOfHanoi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sasa\\OneDrive - Fachhochschule St. Pölten\\Desktop\\Faks\\4.Semestar\\C#\\TowerOfHanoi\\TowerOfHanoi.csproj": {
+    "C:\\Users\\User\\Desktop\\faks\\C# Development\\Hanoi Tower\\TowerOfHanoi\\TowerOfHanoi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sasa\\OneDrive - Fachhochschule St. Pölten\\Desktop\\Faks\\4.Semestar\\C#\\TowerOfHanoi\\TowerOfHanoi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\faks\\C# Development\\Hanoi Tower\\TowerOfHanoi\\TowerOfHanoi.csproj",
         "projectName": "TowerOfHanoi",
-        "projectPath": "C:\\Users\\Sasa\\OneDrive - Fachhochschule St. Pölten\\Desktop\\Faks\\4.Semestar\\C#\\TowerOfHanoi\\TowerOfHanoi.csproj",
-        "packagesPath": "C:\\Users\\Sasa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sasa\\OneDrive - Fachhochschule St. Pölten\\Desktop\\Faks\\4.Semestar\\C#\\TowerOfHanoi\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\faks\\C# Development\\Hanoi Tower\\TowerOfHanoi\\TowerOfHanoi.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\faks\\C# Development\\Hanoi Tower\\TowerOfHanoi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

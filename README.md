@@ -1,22 +1,38 @@
 ## About The Project
-(built With i.e., what kinds of environment?)
-
+This project implements the Tower of Hanoi puzzle in C#. The program demonstrates two different approaches for solving the
 ## Getting Started 
-(how to install and run your program)
-
+To run the program, you need a C# environment capable of compiling and executing console applications.
 ### Prerequisites
+Before running the program, make sure you have:
+.NET SDK installed
+
+A C# compatible IDE such as:
+Visual Studio
+Visual Studio Code
+JetBrains Rider
+You can check if .NET is installed by running:
+dotnet --version
 ### Installation
+Clone or download the project repository.
+Navigate to the project folder.
+
+Build the project:
+dotnet build
+
+Run the program with command line arguments:
+dotnet run -Iterative 3
+or
+dotnet run -Recursive 3
+
 ### Usage
-(show useful examples of how a project can be used)
-
+It can be used to calculate and show moves for a Tower of Hanoi puzzle
 ## Roadmap 
-(what have been implemented and what are the planed features.)
-
+Iterative and Recursive solution for Tower of Hanoi puzzle
 ## Contributing 
-(encourage people to work on your project)
-
+If you somehow can contribute to this, feel free to.
 ## License 
-(your project license)
-
+////
 ## Contact
+Mail: cc241023@usp-students.at
 ## Acknowledgments
+////
